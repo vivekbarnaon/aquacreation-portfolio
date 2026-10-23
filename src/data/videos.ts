@@ -1,0 +1,102 @@
+import { VideoEntry } from "@/types/portfolio";
+
+export const VIDEO_CATEGORIES = [
+  { id: "all", label: "All Works" },
+  { id: "reels", label: "Reels & Shorts" },
+  { id: "promo", label: "Promotional Videos" },
+  { id: "youtube", label: "YouTube Videos" },
+  { id: "vlogs", label: "Vlogs" },
+  { id: "cinematic", label: "Cinematic Edits" },
+  { id: "weddings", label: "Wedding Films" },
+] as const;
+
+export const FEATURED_VIDEOS: VideoEntry[] = [
+  {
+    id: "fashion-show-walk-reel",
+    title: "Fashion Show Runway Walk",
+    category: "reels",
+    categoryLabel: "Reels & Fashion Show",
+    description:
+      "High-fashion runway reel featuring fluid slow-motion camera tracking, beat-synced rhythmic cuts, and vibrant spotlight color balancing tailored for Instagram and TikTok feeds.",
+    posterUrl: "/media/videos/walk-fashion-show-poster.png",
+    instagramUrl: "https://www.instagram.com/p/De0OSpWI38T/",
+    videoUrl: "/media/videos/walk-fashion-show.mp4",
+    aspectRatio: "9:16",
+    isFeatured: true,
+    status: "published",
+    duration: "0:45",
+    client: "Fashion Runway Production",
+    toolsUsed: ["Premiere Pro", "DaVinci Resolve", "After Effects"],
+    fieldHighlights: [
+      "Field: Fashion Show & Model Runway",
+      "Format: 9:16 Vertical 2K/4K",
+      "Motion: Fluid Slow-Mo & Beat Cuts",
+      "Audio: Live Runway Track Sync",
+    ],
+  },
+  {
+    id: "ryan-clinic-promotional-film",
+    title: "Ryan Clinic Commercial Promo",
+    category: "promo",
+    categoryLabel: "Promotional Videos",
+    description:
+      "Commercial brand showcase for Ryan Clinic highlighting modern medical facilities, specialized patient consultations, and clean authoritative clinical color grading.",
+    posterUrl: "/media/videos/ryanclinic-promo-poster.png",
+    videoUrl: "/media/videos/ryanclinic-promo.mp4",
+    aspectRatio: "9:16",
+    isFeatured: true,
+    status: "published",
+    duration: "1:10",
+    client: "Ryan Clinic Healthcare",
+    toolsUsed: ["DaVinci Resolve Studio", "Premiere Pro", "Audition"],
+    fieldHighlights: [
+      "Field: Healthcare & Commercial Brand",
+      "Format: 9:16 Vertical UHD",
+      "Color: Professional Clean Clinical Grade",
+      "Pacing: Narrative Brand Trust",
+    ],
+  },
+  {
+    id: "youtube-editing-sample-03",
+    title: "YouTube Editing — Creator Suite",
+    category: "youtube",
+    categoryLabel: "YouTube Videos",
+    description:
+      "Engaging long-form YouTube edit with strategic retention hooks, visual storytelling b-roll pacing, clean motion graphic callouts, and studio-grade color timing.",
+    posterUrl: "/images/videos/sample-youtube-03.jpg",
+    videoUrl: "", // Designed sample preview frame
+    aspectRatio: "16:9",
+    isFeatured: true,
+    status: "sample",
+    duration: "8:45",
+    client: "Creator Production Spec",
+    toolsUsed: ["Premiere Pro", "Photoshop", "After Effects"],
+    fieldHighlights: [
+      "Field: YouTube Creator & Narrative Video",
+      "Format: 16:9 Ultra-Wide / 4K",
+      "Structure: Hook + Story Retention Flow",
+      "Graphics: Custom Lower Thirds & Overlays",
+    ],
+  },
+  {
+    id: "promotional-video-sample-02",
+    title: "Automotive Cinema Commercial",
+    category: "promo",
+    categoryLabel: "Promotional Videos",
+    description:
+      "Luxury commercial grade showcase with cinematic anamorphic composition, atmospheric volumetric lighting, meticulous pacing, and sunset-obsidian color grading.",
+    posterUrl: "/images/videos/sample-promo-02.jpg",
+    videoUrl: "",
+    aspectRatio: "16:9",
+    isFeatured: false,
+    status: "sample",
+    duration: "1:15",
+    client: "Automotive Commercial Spec",
+    toolsUsed: ["DaVinci Resolve Studio", "Premiere Pro"],
+    fieldHighlights: [
+      "Field: Commercial & Brand Promotion",
+      "Format: 16:9 4K Cinema",
+      "Color: Film Print Emulation",
+    ],
+  },
+];

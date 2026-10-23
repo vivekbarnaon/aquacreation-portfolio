@@ -1,0 +1,256 @@
+import { PhotoEntry } from "@/types/portfolio";
+
+export const PHOTO_CATEGORIES = [
+  { id: "all", label: "All Works" },
+  { id: "brown", label: "Brown Retouch" },
+  { id: "retouching", label: "Photo Retouching" },
+  { id: "bridal", label: "Bridal Edits" },
+  { id: "wedding", label: "Wedding Photo Editing" },
+  { id: "portrait", label: "Portrait Retouching" },
+  { id: "grading", label: "Color Grading" },
+] as const;
+
+export const PHOTO_ITEMS: PhotoEntry[] = [
+  // --- REAL PHOTO RETOUCH ENTRIES (From User Photo Retouch Folder) ---
+  {
+    id: "real-photo-retouch-01",
+    title: "Studio Portrait Retouch — Master 01",
+    category: "retouching",
+    categoryLabel: "Photo Retouching",
+    description:
+      "High-resolution studio portrait retouching featuring non-destructive frequency separation, natural skin micro-texture sculpting, and subtle facial lighting balance.",
+    imageUrl: "/media/photos/photo-retouch/photo-retouch-01.jpg",
+    aspectRatio: "3:4",
+    isFeatured: true,
+    status: "published",
+    cameraOrGear: "Studio Camera Setup",
+    technique: "Non-Destructive Frequency Separation & Dodging / Burning",
+    fieldHighlights: [
+      "Field: Studio Photo Retouching",
+      "Tone: Natural Skin Texture Retention",
+      "Detail: 3264x2448 High-Resolution Master",
+      "Finish: Organic Studio Clarity",
+    ],
+  },
+  {
+    id: "real-photo-retouch-02",
+    title: "Editorial Beauty Retouch — Master 02",
+    category: "retouching",
+    categoryLabel: "Photo Retouching",
+    description:
+      "Professional studio retouching with subtle facial contour sculpting, natural blemish clearing, and delicate warm highlight refinement.",
+    imageUrl: "/media/photos/photo-retouch/photo-retouch-02.jpg",
+    aspectRatio: "3:4",
+    isFeatured: true,
+    status: "published",
+    cameraOrGear: "Studio Optics • Portrait Lens",
+    technique: "Skin Uniformity & Micro-Contrast Balancing",
+    fieldHighlights: [
+      "Field: Editorial Photo Retouching",
+      "Texture: Authentic Pore-Level Preservation",
+      "Resolution: 2448x3264 Master Portrait",
+      "Finish: High-Fashion Clean Polish",
+    ],
+  },
+
+  // --- REAL BROWN RETOUCH ENTRIES (From User Brown Retouch Folder) ---
+  {
+    id: "brown-retouch-01",
+    title: "Brown Retouch — Warm Aesthetic 01",
+    category: "brown",
+    categoryLabel: "Brown Retouch",
+    description:
+      "Warm brown aesthetic color grading with rich chocolate shadow tones, creamy highlight roll-off, and harmonized earthy ambience.",
+    imageUrl: "/media/photos/brown-retouch/brown-retouch-01.jpg",
+    aspectRatio: "3:4",
+    isFeatured: true,
+    status: "published",
+    cameraOrGear: "Editorial Portrait Camera",
+    technique: "Warm Earth Tone LUT & Split Toning",
+    fieldHighlights: [
+      "Field: Brown Retouch & Warm Tones",
+      "Palette: Warm Amber & Earth Tones",
+      "Grade: Soft Shadow Compression",
+      "Mood: Vintage Warm Aesthetic",
+    ],
+  },
+  {
+    id: "brown-retouch-02",
+    title: "Brown Retouch — Warm Aesthetic 02",
+    category: "brown",
+    categoryLabel: "Brown Retouch",
+    description:
+      "Meticulous warm brown tonal styling with golden hour rim accents, skin tone harmonization, and soft film contrast.",
+    imageUrl: "/media/photos/brown-retouch/brown-retouch-02.jpg",
+    aspectRatio: "3:4",
+    isFeatured: true,
+    status: "published",
+    cameraOrGear: "Editorial Portrait Camera",
+    technique: "Selective Color Isolation & Warm Tone Curve",
+    fieldHighlights: [
+      "Field: Brown Retouch & Warm Tones",
+      "Color: Golden Brown Highlights",
+      "Contrast: Cinematic Matte Shadows",
+    ],
+  },
+  {
+    id: "brown-retouch-03",
+    title: "Brown Retouch — Warm Aesthetic 03",
+    category: "brown",
+    categoryLabel: "Brown Retouch",
+    description:
+      "Earthy brown tone calibration creating a calm, cohesive social media feed look with flattering warmth and natural skin glow.",
+    imageUrl: "/media/photos/brown-retouch/brown-retouch-03.jpg",
+    aspectRatio: "3:4",
+    isFeatured: false,
+    status: "published",
+    cameraOrGear: "Editorial Portrait Camera",
+    technique: "Warm Earth Tone Calibration",
+    fieldHighlights: [
+      "Field: Brown Retouch",
+      "Tone: Earthy Amber Palette",
+      "Detail: Balanced Skin Luminance",
+    ],
+  },
+  {
+    id: "brown-retouch-04",
+    title: "Brown Retouch — Warm Aesthetic 04",
+    category: "brown",
+    categoryLabel: "Brown Retouch",
+    description:
+      "Subtle brown and sepia color grade balancing highlights and shadows for an intimate, timeless editorial photograph.",
+    imageUrl: "/media/photos/brown-retouch/brown-retouch-04.jpg",
+    aspectRatio: "3:4",
+    isFeatured: false,
+    status: "published",
+    cameraOrGear: "Editorial Portrait Camera",
+    technique: "Highlight Compression & Warm Grading",
+    fieldHighlights: [
+      "Field: Brown Retouch",
+      "Palette: Deep Mocha & Cream",
+      "Mood: Timeless Editorial",
+    ],
+  },
+  {
+    id: "brown-retouch-05",
+    title: "Brown Retouch — Warm Aesthetic 05",
+    category: "brown",
+    categoryLabel: "Brown Retouch",
+    description:
+      "Warm tonal layering that enriches clothing textures and softens skin tones with a golden-brown ambient glow.",
+    imageUrl: "/media/photos/brown-retouch/brown-retouch-05.jpg",
+    aspectRatio: "3:4",
+    isFeatured: false,
+    status: "published",
+    cameraOrGear: "Editorial Portrait Camera",
+    technique: "Warm Tonal Layering",
+    fieldHighlights: [
+      "Field: Brown Retouch",
+      "Tone: Warm Honey & Cinnamon",
+      "Detail: Fabric & Skin Softening",
+    ],
+  },
+  {
+    id: "brown-retouch-06",
+    title: "Brown Retouch — Warm Aesthetic 06",
+    category: "brown",
+    categoryLabel: "Brown Retouch",
+    description:
+      "Rich caramel and toasted brown grading emphasizing portrait depth and warm studio lighting.",
+    imageUrl: "/media/photos/brown-retouch/brown-retouch-06.jpg",
+    aspectRatio: "3:4",
+    isFeatured: false,
+    status: "published",
+    cameraOrGear: "Editorial Portrait Camera",
+    technique: "Caramel Split Tone Grading",
+    fieldHighlights: [
+      "Field: Brown Retouch",
+      "Tone: Rich Caramel Shadows",
+      "Finish: Cinematic Warmth",
+    ],
+  },
+  {
+    id: "brown-retouch-07",
+    title: "Brown Retouch — Warm Aesthetic 07",
+    category: "brown",
+    categoryLabel: "Brown Retouch",
+    description:
+      "Atmospheric brown retouch finish with smooth gradient falloff and cohesive editorial temperature.",
+    imageUrl: "/media/photos/brown-retouch/brown-retouch-07.jpg",
+    aspectRatio: "3:4",
+    isFeatured: false,
+    status: "published",
+    cameraOrGear: "Editorial Portrait Camera",
+    technique: "Global Temperature Calibration",
+    fieldHighlights: [
+      "Field: Brown Retouch",
+      "Finish: Cohesive Warm Temperature",
+      "Grade: Warm Sunset Falloff",
+    ],
+  },
+
+  // --- INTERACTIVE BEFORE & AFTER SLIDER ITEM ---
+  {
+    id: "editorial-retouch-before-after-02",
+    title: "Master Beauty Retouching — Before & After",
+    category: "retouching",
+    categoryLabel: "Photo Retouching",
+    description:
+      "Interactive Before & After studio comparison demonstrating professional frequency separation, natural blemish removal, skin micro-texture sculpting, and cinematic rim light color grading.",
+    imageUrl: "/images/photos/after-retouch.jpg",
+    beforeUrl: "/images/photos/before-retouch.jpg",
+    aspectRatio: "3:4",
+    isFeatured: true,
+    status: "sample",
+    cameraOrGear: "Hasselblad X2D • 90mm Lens",
+    technique: "Non-Destructive Frequency Separation & Split Toning",
+    fieldHighlights: [
+      "Field: Commercial & Fashion Retouching",
+      "Comparison: Interactive Before vs After Slider",
+      "Skin: Pore-Level Organic Preservation",
+      "Lighting: Sunset Rim Light Accent Grading",
+    ],
+  },
+
+  // --- BRIDAL AND COLOR GRADING ENTRIES ---
+  {
+    id: "bridal-edit-sample-01",
+    title: "Cinematic Bridal Radiance — Sample 01",
+    category: "bridal",
+    categoryLabel: "Bridal Edits",
+    description:
+      "Fine-art bridal retouching emphasizing intricate lace veil details, radiant skin toning with organic texture retention, and soft candlelight highlights.",
+    imageUrl: "/images/photos/bridal-portrait.jpg",
+    aspectRatio: "3:4",
+    isFeatured: true,
+    status: "sample",
+    cameraOrGear: "Sony A7IV • 85mm f/1.4 GM",
+    technique: "Frequency Separation & Dodging / Burning",
+    fieldHighlights: [
+      "Field: Bridal & Wedding Editorial",
+      "Technique: High-End Texture Preservation",
+      "Color: Warm Candlelight & Sunset Tones",
+      "Detail: Veil & Jewelry Micro-Sharpening",
+    ],
+  },
+  {
+    id: "cinematic-color-grade-03",
+    title: "Atmospheric Narrative Grade — Sample 03",
+    category: "grading",
+    categoryLabel: "Color Grading",
+    description:
+      "Cinematic narrative still graded with 35mm film emulation, Hollywood teal-shadow and sunset amber highlight split-toning, rain droplet definition, and atmospheric volumetric depth.",
+    imageUrl: "/images/photos/color-grade-still.jpg",
+    aspectRatio: "16:9",
+    isFeatured: true,
+    status: "sample",
+    cameraOrGear: "ARRI Alexa Mini LF • Master Anamorphic",
+    technique: "Custom LUT Calibration & Contrast Curve Timing",
+    fieldHighlights: [
+      "Field: Cinema Stills & Motion Color Timing",
+      "Ratio: 16:9 Anamorphic Composition",
+      "Palette: Obsidian, Deep Teal & Amber Split",
+      "Mood: Rainy City Emotional Narrative",
+    ],
+  },
+];

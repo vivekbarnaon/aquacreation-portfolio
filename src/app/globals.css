@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #08070A;
+  --color-deep-black: #0E0C10;
+  --color-dark-purple: #180F0D;
+  --color-royal-purple: #EA580C;
+  --color-electric-violet: #F59E0B;
+  --color-soft-lavender: #FED7AA;
+  --color-sunset-gold: #FDE047;
+  --color-sunset-orange: #EA580C;
+  --color-sunset-amber: #F59E0B;
+  --color-sunset-coral: #E11D48;
+  --color-primary-white: #FFFBF5;
+  --color-secondary-text: #A8A29E;
+
+  --font-cinematic: var(--font-cinematic), "Cinzel", "Times New Roman", serif;
+  --font-sans: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: var(--font-script), "Caveat", cursive;
+}
+
+
+:root {
+  --background: #08070A;
+  --foreground: #FFFBF5;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #08070A;
+  color: #FFFBF5;
+  color-scheme: dark;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #08070A;
+  color: #FFFBF5;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+/* Custom Cinematic Sunset Selection */
+::selection {
+  background: #EA580C;
+  color: #FFFFFF;
+}
+
+/* Custom Sleek Scrollbar in Sunset Tone */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08070A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #180F0D;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EA580C;
+}
+
+/* Ambient Sunset Glows */
+.bg-cinema-gradient {
+  background: linear-gradient(135deg, #180F0D 0%, #C2410C 48%, #F59E0B 100%);
+}
+
+.bg-radial-purple-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(234, 88, 12, 0.25) 0%, rgba(24, 15, 13, 0.1) 50%, transparent 80%);
+}
+
+.bg-radial-subtle {
+  background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.15) 0%, transparent 60%);
+}
+
+/* Cinematic Anamorphic Letterbox Effect */
+.aspect-cinemascope {
+  aspect-ratio: 2.39 / 1;
+}
+
+/* Film Grain Texture Filter */
+.film-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.032'/%3E%3C/svg%3E");
+}
+
+/* Glass Card */
+.glass-panel {
+  background: rgba(14, 12, 16, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(234, 88, 12, 0.25);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(234, 88, 12, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Reduced Motion Safety */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Continuous Horizontal Reel Marquee Keyframes */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee 55s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-slow:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-banner {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+
+/* Organic Ribbon Background Animations */
+@keyframes wave-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0.8deg) scale(1.01);
+  }
+}
+
+@keyframes ribbon-pulse {
+  0%, 100% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 18px rgba(249, 115, 22, 0.45));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 35px rgba(245, 158, 11, 0.75));
+  }
+}
+
+@keyframes glow-breathe {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+  }
+}
+
+.animate-wave-float {
+  animation: wave-float 10s ease-in-out infinite;
+}
+
+.animate-ribbon-pulse {
+  animation: ribbon-pulse 6s ease-in-out infinite;
+}
+
+.animate-glow-breathe {
+  animation: glow-breathe 8s ease-in-out infinite;
+}
+
+/* Audio Equalizer Bar Dance Animation */
+@keyframes eq-dance-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+@keyframes eq-dance-2 {
+  0%, 100% { height: 14px; }
+  50% { height: 6px; }
+}
+
+@keyframes eq-dance-3 {
+  0%, 100% { height: 8px; }
+  50% { height: 18px; }
+}
+
+.animate-eq-1 {
+  animation: eq-dance-1 0.8s ease-in-out infinite;
+}
+
+.animate-eq-2 {
+  animation: eq-dance-2 0.9s ease-in-out infinite 0.15s;
+}
+
+.animate-eq-3 {
+  animation: eq-dance-3 0.7s ease-in-out infinite 0.3s;
+}
+
