@@ -99,7 +99,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           
           {/* Left Column: Category Kicker, Headline, Copy, CTAs, Bottom Metrics */}
-          <div className="lg:col-span-8 space-y-5 sm:space-y-7">
+          <div className="lg:col-span-7 space-y-5 sm:space-y-7">
             
             {/* Top Subtitle Kicker: VIDEO • PHOTO • CREATIVE • STORYTELLING */}
             <div className="text-[10px] sm:text-xs md:text-sm tracking-[0.16em] sm:tracking-[0.28em] md:tracking-[0.32em] uppercase text-stone-400 font-semibold select-none">
@@ -107,7 +107,7 @@ export default function Hero() {
             </div>
 
             {/* Main Headline matching mockup */}
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1.05]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black tracking-tight leading-[1.05]">
               <span className="text-white block">Your Vision.</span>
               <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-amber-600 bg-clip-text text-transparent block mt-1">
                 Our Creativity.
@@ -187,15 +187,15 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Signature Handwriting Calligraphy "Every Frame Tells a Story" */}
-          <div className="lg:col-span-4 flex items-center justify-center lg:justify-end select-none relative pt-4 lg:pt-0 overflow-hidden">
-            <div className="relative font-script text-amber-300/90 text-4xl sm:text-6xl md:text-7xl lg:text-8xl select-none leading-[0.98] drop-shadow-[0_0_28px_rgba(245,158,11,0.5)] -rotate-6 transform hover:rotate-[-3deg] transition-transform duration-500 text-center lg:text-right px-2">
+          <div className="lg:col-span-5 flex items-center justify-center lg:justify-end select-none relative pt-6 lg:pt-0">
+            <div className="relative font-script text-amber-300/90 text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl select-none leading-[1.08] drop-shadow-[0_0_28px_rgba(245,158,11,0.5)] -rotate-6 transform-gpu hover:rotate-[-2deg] transition-transform duration-500 text-center lg:text-right px-4 sm:px-6">
               <span className="block text-amber-200">Every</span>
-              <span className="block translate-x-1 sm:translate-x-3 text-amber-300">Frame</span>
-              <span className="block translate-x-2 sm:translate-x-6 text-amber-400">Tells a</span>
-              <span className="block translate-x-3 sm:translate-x-10 text-orange-400">Story</span>
+              <span className="block text-amber-300 translate-x-1 sm:translate-x-2 lg:translate-x-0">Frame</span>
+              <span className="block text-amber-400 translate-x-2 sm:translate-x-3 lg:translate-x-0">Tells a</span>
+              <span className="block text-orange-400 translate-x-3 sm:translate-x-4 lg:translate-x-0">Story</span>
               
               {/* Golden Accent Underline Dash beneath "Story" */}
-              <div className="w-10 sm:w-14 h-1 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full translate-x-3 sm:translate-x-14 mt-2 shadow-[0_0_10px_#F59E0B] mx-auto lg:mx-0" />
+              <div className="w-12 sm:w-16 h-1 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full mt-2 shadow-[0_0_10px_#F59E0B] mx-auto lg:ml-auto lg:mr-1" />
             </div>
           </div>
 
