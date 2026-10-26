@@ -12,6 +12,29 @@ export const VIDEO_CATEGORIES = [
 
 export const FEATURED_VIDEOS: VideoEntry[] = [
   {
+    id: "fashion-walk-style-motion-reel",
+    title: "Fashion Walk — Slow Motion & Style Edit",
+    category: "reels",
+    categoryLabel: "Reels & Fashion Walk",
+    description:
+      "Walk with style, move with confidence. High-energy vertical slow-motion fashion walk featuring fluid camera tracking, dynamic speed ramps, and mood-driven spotlight color balance.",
+    posterUrl: "/media/videos/fashion-walk-style-poster.jpg",
+    instagramUrl: "https://www.instagram.com/p/De8lc4TutUl/",
+    videoUrl: "",
+    aspectRatio: "9:16",
+    isFeatured: true,
+    status: "published",
+    duration: "0:30",
+    client: "AquaCreation Editorial Walk",
+    toolsUsed: ["Premiere Pro", "DaVinci Resolve", "After Effects"],
+    fieldHighlights: [
+      "Field: Fashion Walk & Slow-Motion Edit",
+      "Format: 9:16 Vertical 2K/4K",
+      "Motion: Speed Ramping & Motion Tracking",
+      "Audio: Live Rhythm & Beat-Synced Cuts",
+    ],
+  },
+  {
     id: "fashion-show-walk-reel",
     title: "Fashion Show Runway Walk",
     category: "reels",
