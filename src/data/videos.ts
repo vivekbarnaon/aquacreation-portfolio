@@ -20,11 +20,11 @@ export const FEATURED_VIDEOS: VideoEntry[] = [
       "Walk with style, move with confidence. High-energy vertical slow-motion fashion walk featuring fluid camera tracking, dynamic speed ramps, and mood-driven spotlight color balance.",
     posterUrl: "/media/videos/fashion-walk-style-poster.jpg",
     instagramUrl: "https://www.instagram.com/p/De8lc4TutUl/",
-    videoUrl: "",
+    videoUrl: "/media/videos/fashion-walk-style.mp4",
     aspectRatio: "9:16",
     isFeatured: true,
     status: "published",
-    duration: "0:30",
+    duration: "0:27",
     client: "AquaCreation Editorial Walk",
     toolsUsed: ["Premiere Pro", "DaVinci Resolve", "After Effects"],
     fieldHighlights: [
@@ -65,7 +65,7 @@ export const FEATURED_VIDEOS: VideoEntry[] = [
     description:
       "Commercial brand showcase for Ryan Clinic highlighting modern medical facilities, specialized patient consultations, and clean authoritative clinical color grading.",
     posterUrl: "/media/videos/ryanclinic-promo-poster.png",
-    videoUrl: "/media/videos/ryanclinic-promo.mp4",
+    videoUrl: "",
     aspectRatio: "9:16",
     isFeatured: true,
     status: "published",

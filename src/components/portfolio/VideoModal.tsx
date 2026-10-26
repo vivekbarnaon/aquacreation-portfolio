@@ -101,7 +101,27 @@ export default function VideoModal({ video, onClose }: VideoModalProps) {
         <div className="overflow-y-auto p-4 sm:p-6 space-y-5 sm:space-y-6">
           {/* Media Frame Section */}
           <div className="relative rounded-xl overflow-hidden bg-black border border-amber-500/25 shadow-inner flex items-center justify-center">
-            {video.instagramUrl ? (
+            {video.videoUrl ? (
+              <div className="w-full flex flex-col items-center justify-center py-2 sm:py-3 bg-[#0A0705]">
+                <div
+                  className={`relative w-full ${
+                    isVertical
+                      ? "max-w-[320px] sm:max-w-[360px] aspect-[9/16] max-h-[66vh]"
+                      : "max-w-3xl aspect-video max-h-[58vh]"
+                  } rounded-xl overflow-hidden shadow-2xl border border-amber-500/30 bg-black flex items-center justify-center`}
+                >
+                  <video
+                    src={video.videoUrl}
+                    poster={video.posterUrl}
+                    controls
+                    autoPlay
+                    playsInline
+                    loop
+                    className="w-full h-full object-contain bg-black"
+                  />
+                </div>
+              </div>
+            ) : video.instagramUrl ? (
               <div className="w-full flex flex-col items-center justify-center py-3 bg-[#0A0705]">
                 <div className="w-full max-w-[340px] sm:max-w-[380px] h-[520px] sm:h-[600px] rounded-xl overflow-hidden shadow-2xl border border-amber-500/30 bg-black">
                   <iframe
@@ -125,14 +145,6 @@ export default function VideoModal({ video, onClose }: VideoModalProps) {
                   </a>
                 </div>
               </div>
-            ) : video.videoUrl ? (
-              <video
-                src={video.videoUrl}
-                poster={video.posterUrl}
-                controls
-                autoPlay
-                className={`w-full max-h-[48vh] sm:max-h-[58vh] object-contain ${isVertical ? "max-w-[280px] sm:max-w-xs mx-auto" : ""}`}
-              />
             ) : (
               <div className={`relative w-full ${isVertical ? "aspect-[9/16] max-w-[280px] sm:max-w-xs mx-auto" : "aspect-video"}`}>
                 <Image

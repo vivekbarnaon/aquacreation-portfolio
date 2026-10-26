@@ -135,9 +135,9 @@ export default function SelectedWork() {
                   {walkStyleVideo.description}
                 </p>
                 <div className="pt-1 flex items-center justify-between text-[11px] font-semibold">
-                  <span className="inline-flex items-center gap-1.5 text-pink-300 group-hover:text-pink-200 transition-colors">
-                    <InstagramIcon className="w-3.5 h-3.5 text-pink-400" />
-                    <span>Watch Instagram Reel ▶</span>
+                  <span className="inline-flex items-center gap-1.5 text-amber-300 group-hover:text-amber-200 transition-colors">
+                    <Play className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                    <span>Play Video On Website ▶</span>
                   </span>
                   <span className="font-mono text-stone-400 text-[10px]">{walkStyleVideo.duration}</span>
                 </div>
@@ -197,14 +197,10 @@ export default function SelectedWork() {
                   {runwayVideo.description}
                 </p>
                 <div className="pt-1 flex items-center justify-between text-[11px] font-semibold">
-                  {runwayVideo.instagramUrl ? (
-                    <span className="inline-flex items-center gap-1.5 text-pink-300 group-hover:text-pink-200 transition-colors">
-                      <InstagramIcon className="w-3.5 h-3.5 text-pink-400" />
-                      <span>Watch Instagram Reel ▶</span>
-                    </span>
-                  ) : (
-                    <span className="text-amber-400">Click to Play Reel</span>
-                  )}
+                  <span className="inline-flex items-center gap-1.5 text-amber-300 group-hover:text-amber-200 transition-colors">
+                    <Play className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                    <span>Play Video On Website ▶</span>
+                  </span>
                   <span className="font-mono text-stone-400 text-[10px]">{runwayVideo.duration}</span>
                 </div>
               </div>

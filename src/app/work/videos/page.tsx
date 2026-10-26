@@ -101,7 +101,12 @@ export default function VideosPage() {
 
                     {/* Status & Duration */}
                     <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px]">
-                      {video.instagramUrl ? (
+                      {video.videoUrl ? (
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-500/25 border border-amber-500/50 text-amber-300 font-semibold text-[10px]">
+                          <Play className="w-3 h-3 fill-amber-400 text-amber-400" />
+                          <span>Play Video</span>
+                        </span>
+                      ) : video.instagramUrl ? (
                         <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-pink-600/30 to-amber-500/20 border border-pink-500/40 text-pink-300 font-semibold text-[10px]">
                           <InstagramIcon className="w-3 h-3 text-pink-400" />
                           <span>Instagram Reel</span>
